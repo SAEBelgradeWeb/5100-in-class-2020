@@ -13,6 +13,10 @@
     <input type="file" name="image" id="image">
 
     <button type="submit">Upload</button>
+
+    <input type="checkbox" name="music[]" value="rock">
+    <input type="checkbox" name="music[]" value="techno">
+    <input type="checkbox" name="music[]" value="pop">
 </form>
 </body>
 </html>
