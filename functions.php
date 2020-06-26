@@ -7,6 +7,21 @@ function dd($var) {
     die;
 }
 
+function db_connect() {
+    $mysql = mysqli_connect(HOST, DB_USER, DB_PASS);
+
+    if(!$mysql) {
+        die('Connection to mysql was not successful');
+    }
+
+    $db = mysqli_select_db($mysql, DB_DATABASE);
+
+    if(!$db) {
+        die('Connection to database was not successful');
+    }
+    return $mysql;
+}
+
 function roman_numerals_converter($number)
 {
     $out = "";
