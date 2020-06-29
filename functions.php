@@ -1,5 +1,5 @@
 <?php
-
+include_once "config.php";
 function dd($var) {
     echo "<pre>";
     var_dump($var);
