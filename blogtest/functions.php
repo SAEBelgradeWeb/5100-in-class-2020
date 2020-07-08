@@ -1,6 +1,7 @@
 <?php
 include_once "./config.php";
 $db = db_connect();
+
 function dd($var) {
     echo "<pre>";
     var_dump($var);
